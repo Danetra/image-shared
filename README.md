@@ -22,3 +22,13 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Step By Step
+
+For running this API, you must:
+
+1. composer update
+2. php artisan key:generate
+3. php artisan jwt:secret
+4. php artisan migrate
+5. php artisan db:seed
