@@ -1,0 +1,299 @@
+{
+	"info": {
+		"_postman_id": "e0e0fe29-0970-4798-8762-d41a2b90bc8a",
+		"name": "VhiWeb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21736836"
+	},
+	"item": [
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "GET  POST",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjIwMjMvbG9naW4iLCJpYXQiOjE2Nzk5Nzg4NzgsImV4cCI6MTY3OTk4MjQ3OCwibmJmIjoxNjc5OTc4ODc4LCJqdGkiOiJsVG0xYWVxc3l2V3QzVkdmIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.kGqacetv3J1fWuU7__ZVjOB7EyTtU5V4DXOyJM11lrs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2023/photos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2023",
+							"path": [
+								"photos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET DETAIL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2023/photos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2023",
+							"path": [
+								"photos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE POST",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjIwMjMvbG9naW4iLCJpYXQiOjE2Nzk5ODk3NjcsImV4cCI6MTY3OTk5MzM2NywibmJmIjoxNjc5OTg5NzY3LCJqdGkiOiI0SVJxVUZieVZ0UDBjZlI3Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.OgFijnRAhRJHU9NRoG6Rm6sgdhRCS9GXsDraJB2hVYM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Apa aja yang penting enak\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2023/photos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2023",
+							"path": [
+								"photos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LIKE POST",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjIwMjMvbG9naW4iLCJpYXQiOjE2Nzk5ODk3NjcsImV4cCI6MTY3OTk5MzM2NywibmJmIjoxNjc5OTg5NzY3LCJqdGkiOiI0SVJxVUZieVZ0UDBjZlI3Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.OgFijnRAhRJHU9NRoG6Rm6sgdhRCS9GXsDraJB2hVYM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2023/photos/1/like",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2023",
+							"path": [
+								"photos",
+								"1",
+								"like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UNLIKE POST",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjIwMjMvbG9naW4iLCJpYXQiOjE2Nzk5ODk3NjcsImV4cCI6MTY3OTk5MzM2NywibmJmIjoxNjc5OTg5NzY3LCJqdGkiOiI0SVJxVUZieVZ0UDBjZlI3Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.OgFijnRAhRJHU9NRoG6Rm6sgdhRCS9GXsDraJB2hVYM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"likes\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2023/photos/1/unlike",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2023",
+							"path": [
+								"photos",
+								"1",
+								"unlike"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPLOAD POST",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjIwMjMvbG9naW4iLCJpYXQiOjE2Nzk5ODA4MDYsImV4cCI6MTY3OTk4NDQwNiwibmJmIjoxNjc5OTgwODA2LCJqdGkiOiJqYjRPRWJJVGpiajJsVjk2Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.KMMyN0Sd-EUik-Yg84ZokFa2QlGOC7z1bxk7l5n9e3A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "images",
+									"type": "file",
+									"src": "/C:/Users/danie/OneDrive/Pictures/gokaiger.jpg"
+								},
+								{
+									"key": "description",
+									"value": "Virtual Concert With All Religion",
+									"type": "text"
+								},
+								{
+									"key": "likes",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2023/photos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2023",
+							"path": [
+								"photos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"danetra05@gmail.com\",\r\n    \"password\": \"danetra05\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2023/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2023",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjIwMjMvbG9naW4iLCJpYXQiOjE2Nzk1NzAyNTUsImV4cCI6MTY3OTU3Mzg1NSwibmJmIjoxNjc5NTcwMjU1LCJqdGkiOiJ0QlhwR1RhV2puOHQxeXFHIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.WNd2rfAJy146vhfA6X8Rr_FPpBZMgKA0wIEzkIL9_eA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2023/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2023",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
