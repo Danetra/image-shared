@@ -75,7 +75,8 @@ $app->configure('jwt');
 */
 
 $app->middleware([
-    App\Http\Middleware\ExampleMiddleware::class
+    App\Http\Middleware\ExampleMiddleware::class,
+    'Nord\Lumen\Cors\CorsMiddleware',
 ]);
 
 $app->routeMiddleware([
@@ -98,6 +99,7 @@ $app->register(App\Providers\AuthServiceProvider::class);
 $app->register(App\Providers\EventServiceProvider::class);
 $app->register(Tymon\JWTAuth\Providers\LumenServiceProvider::class);
 $app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
+$app->register('Nord\Lumen\Cors\CorsServiceProvider');
 
 /*
 |--------------------------------------------------------------------------

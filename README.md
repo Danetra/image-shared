@@ -32,3 +32,4 @@ For running this API, you must:
 3. php artisan jwt:secret
 4. php artisan migrate
 5. php artisan db:seed
+6. Running server: php -S localhost:2023 -t Public
